@@ -24,13 +24,13 @@ pipeline{
 
         stage('Staging'){
             steps{
-            sh 'firebase deploy -P calc-replica-staging --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P calc-replica-staging --token "1//06BxqhyHLr1AGCgYIARAAGAYSNwF-L9IrDuduMHUZJaWa_a0eVFU823hpH1PL39-wPXnGd6kiPxAfXyZYMm2tU3_DhBt5egSDoc8"'
             }
         }
 
         stage('Production'){
             steps{
-            sh 'firebase deploy -P calc-replica-production --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P calc-replica-production --token "1//06BxqhyHLr1AGCgYIARAAGAYSNwF-L9IrDuduMHUZJaWa_a0eVFU823hpH1PL39-wPXnGd6kiPxAfXyZYMm2tU3_DhBt5egSDoc8"'
             }
         }
     }
